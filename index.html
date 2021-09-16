@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sudoku solver page | zozkokis</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+    <section>
+        <h1>sudoku solver page</h1>
+        <p>fill out the known fields</p>
+        <div class="sudoku_wrapper">
+            <div class="table">
+                <div class="row_wrapper">
+
+                    <div class="a 0_box">
+                        <div class="row_1">
+                            <div class="cell">
+                                <input type="text" class='num_in a0' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in b0' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in c0' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="cell">
+                                <input type="text" class='num_in a1' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in b1' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in c1' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="cell">
+                                <input type="text" class='num_in a2' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in b2' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in c2' placeholder='0'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b 0_box">
+                        <div class="row_1">
+                            <div class="cell">
+                                <input type="text" class='num_in d0' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in e0' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in f0' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="cell">
+                                <input type="text" class='num_in d1' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in e1' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in f1' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="cell">
+                                <input type="text" class='num_in d2' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in e2' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in f2' placeholder='0'>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="c 0_box">
+                        <div class="row_1">
+                            <div class="cell">
+                                <input type="text" class='num_in g0' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in h0' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in i0' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="cell">
+                                <input type="text" class='num_in g1' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in h1' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in i1' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="cell">
+                                <input type="text" class='num_in g2' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in h2' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in i2' placeholder='0'>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row_wrapper">
+
+                    <div class="a 0_box">
+                        <div class="row_1">
+                            <div class="cell">
+                                <input type="text" class='num_in a3' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in b3' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in c3' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="cell">
+                                <input type="text" class='num_in a4' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in b4' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in c4' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="cell">
+                                <input type="text" class='num_in a5' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in b5' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in c5' placeholder='0'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b 0_box">
+                        <div class="row_1">
+                            <div class="cell">
+                                <input type="text" class='num_in d3' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in e3' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in f3' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="cell">
+                                <input type="text" class='num_in d4' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in e4' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in f4' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="cell">
+                                <input type="text" class='num_in d5' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in e5' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in f5' placeholder='0'>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="c 0_box">
+                        <div class="row_1">
+                            <div class="cell">
+                                <input type="text" class='num_in g3' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in h3' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in i3' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="cell">
+                                <input type="text" class='num_in g4' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in h4' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in i4' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="cell">
+                                <input type="text" class='num_in g5' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in h5' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in i5' placeholder='0'>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row_wrapper">
+
+                    <div class="a 0_box">
+                        <div class="row_1">
+                            <div class="cell">
+                                <input type="text" class='num_in a6' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in b6' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in c6' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="cell">
+                                <input type="text" class='num_in a7' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in b7' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in c7' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="cell">
+                                <input type="text" class='num_in a8' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in b8' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in c8' placeholder='0'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b 0_box">
+                        <div class="row_1">
+                            <div class="cell">
+                                <input type="text" class='num_in d6' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in e6' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in f6' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="cell">
+                                <input type="text" class='num_in d7' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in e7' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in f7' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="cell">
+                                <input type="text" class='num_in d8' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in e8' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in f8' placeholder='0'>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="c 0_box">
+                        <div class="row_1">
+                            <div class="cell">
+                                <input type="text" class='num_in g6' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in h6' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in i6' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="cell">
+                                <input type="text" class='num_in g7' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in h7' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in i7' placeholder='0'>
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="cell">
+                                <input type="text" class='num_in g8' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in h8' placeholder='0'>
+                            </div>
+                            <div class="cell">
+                                <input type="text" class='num_in i8' placeholder='0'>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

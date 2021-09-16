@@ -1,2 +1,2 @@
-# sudokusolve
-sudoku solver app
+# sudokusolver
+sudoku solver app by ZozkoKis
